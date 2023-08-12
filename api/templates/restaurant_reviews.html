@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if insight %}
+        <h1>Restaurant Reviews: {{ insight }}</h1></br>
+    {% else %}
+        <h1>Restaurant Reviews</h1></br>
+    {% endif %}
+    {% if reviews %}
+        {% for review in reviews %}
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{ review.reviewer }}</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Platform: {{ review.platform }}</h6>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Rating: {{ review.star_rating }}</h6>
+                  <p class="card-text">{{ review.comment }}</p></br>
+                  <p class="card-text">Ordered:
+                    {% for item in review.menu_items %}
+                      <p class="card-text">{{ item.name }}</p>
+                    {% endfor %}
+                  </p></br>
+                </div>
+              </div>
+        </div></br>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

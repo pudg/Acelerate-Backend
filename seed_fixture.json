@@ -1,0 +1,1114 @@
+[
+    {
+        "model": "api.restaurant",
+        "pk": 1,
+        "fields": {
+            "name": "Napoli Pizza",
+            "platform_id": "2058686",
+            "uri": "https://www.grubhub.com/restaurant/napoli-pizza-1045-polk-st-san-francisco/2058686",
+            "phone_number": ""
+        }
+     },
+     {
+        "model": "api.restaurant",
+        "pk": 2,
+        "fields": {
+            "name": "Canter's Deli",
+            "platform_id": "411068",
+            "uri": "https://www.grubhub.com/restaurant/canters-deli-419-n-fairfax-ave-los-angeles/2539237",
+            "phone_number": ""
+        }
+     },
+    {
+        "model": "api.review",
+        "pk": 1,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Park",
+            "comment": "You need to add for side  . \nThere are no coslow  for Reuben for side.",
+            "platform": "grubhub",
+            "star_rating": 3,
+            "menu_items": [
+                {
+                    "id": "21788306363",
+                    "name": "Corned Beef Reuben"
+                },
+                {
+                    "id": "21788306239",
+                    "name": "Hot Corned Beef Sandwich"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 2,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Mitchell",
+            "comment": "Great always a go to for us!",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "21788306363",
+                    "name": "Corned Beef Reuben"
+                },
+                {
+                    "id": "21788306166",
+                    "name": "Sweet And Sour Stuffed Cabbage"
+                },
+                {
+                    "id": "21788306166",
+                    "name": "Sweet And Sour Stuffed Cabbage"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 3,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Dude",
+            "comment": "They put the wrong item",
+            "platform": "grubhub",
+            "star_rating": 2,
+            "menu_items": [
+                {
+                    "id": "21788306332",
+                    "name": "Chicken Broth Soup"
+                },
+                {
+                    "id": "21788306244",
+                    "name": "Pastrami Dip Sandwich"
+                },
+                {
+                    "id": "21788306216",
+                    "name": "Fisherman's Folly Sandwich"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 4,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Stephen",
+            "comment": "I paid for a drink coke that I didn\u2019t received.",
+            "platform": "grubhub",
+            "star_rating": 3,
+            "menu_items": [
+                {
+                    "id": "21788306310",
+                    "name": "Hot Brisket of Beef Sandwich"
+                },
+                {
+                    "id": "19659358678",
+                    "name": "Soft Drink"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 5,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Anne",
+            "comment": "As always, good",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659357164",
+                    "name": "Bagel & Cream Cheese"
+                },
+                {
+                    "id": "21788306353",
+                    "name": "Matzo Ball Soup"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 6,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Brandon",
+            "comment": "The driver was kind enough to adjust to a mistake with the address on the fly and he kept me informed. Very professional and courteous ",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "21788306319",
+                    "name": "Pastrami Reuben Sandwich"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 7,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "James",
+            "comment": "Delicious! Thank you!!",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "21788306189",
+                    "name": "Tuna Melt Sandwich"
+                },
+                {
+                    "id": "19659358892",
+                    "name": "Black & White Cookie"
+                },
+                {
+                    "id": "19659358702",
+                    "name": "Sliced Challah Bread"
+                },
+                {
+                    "id": "21788306242",
+                    "name": "Thick Cut Steak Fries"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 8,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Rachel",
+            "comment": "I asked for napkins and spoon and didn't get any.  However, your driver was super nice and the soup was great",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "21788306335",
+                    "name": "Barley Bean Soup"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 9,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Melissa",
+            "comment": "Love every sandwich I've ordered! Looking forward to next time. Thank you!!!",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659358524",
+                    "name": "Turkey Reuben Sandwich"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 10,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Sheryl",
+            "comment": "Not great food. Corned Beef was practically all fat, inedible. I'll never order from there again",
+            "platform": "grubhub",
+            "star_rating": 3,
+            "menu_items": [
+                {
+                    "id": "21788306239",
+                    "name": "Hot Corned Beef Sandwich"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 11,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Mark",
+            "comment": "I love Canters. Whenever I'm in Beverly Hills which is not often, I make sure to eat there.",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "21788306329",
+                    "name": "Beef Dip Sandwich"
+                },
+                {
+                    "id": "21788306362",
+                    "name": "Cheeseburger"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 12,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Oscar",
+            "comment": "The cold slaw  container leaked ",
+            "platform": "grubhub",
+            "star_rating": 3,
+            "menu_items": [
+                {
+                    "id": "19659357305",
+                    "name": "1/2 lb Cold Smoked Turkey"
+                },
+                {
+                    "id": "19659357305",
+                    "name": "1/2 lb Cold Smoked Turkey"
+                },
+                {
+                    "id": "19659357400",
+                    "name": "Cole Slaw Pint"
+                },
+                {
+                    "id": "19659357400",
+                    "name": "Cole Slaw Pint"
+                },
+                {
+                    "id": "19659358675",
+                    "name": "1/2 lb Sliced Roast Beef"
+                },
+                {
+                    "id": "19659357815",
+                    "name": "1/2 lb Cold Pastrami"
+                },
+                {
+                    "id": "19659358538",
+                    "name": "Potato Salad Pint"
+                },
+                {
+                    "id": "19659357815",
+                    "name": "1/2 lb Cold Pastrami"
+                },
+                {
+                    "id": "19659357401",
+                    "name": "Sliced Rye Bread w/ Seeds"
+                },
+                {
+                    "id": "19659358785",
+                    "name": "1/2 lb Cold Sliced Baked Ham"
+                },
+                {
+                    "id": "19659358702",
+                    "name": "Sliced Challah Bread"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 13,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Ariel",
+            "comment": "I didn\u2019t receive part of my order ",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659357354",
+                    "name": "Matzo Ball Soup"
+                },
+                {
+                    "id": "19659358981",
+                    "name": "Chicken Broth Soup"
+                },
+                {
+                    "id": "19659358034",
+                    "name": "Corned Beef Reuben"
+                },
+                {
+                    "id": "19659358584",
+                    "name": "Thick Cut Steak Fries"
+                },
+                {
+                    "id": "19659357688",
+                    "name": "Dr. Browns Sodas"
+                },
+                {
+                    "id": "19659357885",
+                    "name": "Water"
+                },
+                {
+                    "id": "19659357915",
+                    "name": "Creamy Cheesecake"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 14,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "ARLYNE",
+            "comment": "THANK YOU.  CANTER'S IS GREAT",
+            "platform": "grubhub",
+            "star_rating": 4,
+            "menu_items": [
+                {
+                    "id": "19659358973",
+                    "name": "Smoked Salmon Plate"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 15,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Michael",
+            "comment": "Food was good but the prizes in relation to the sizes very off. Small sandwich and a spoonful of potato salad for 20 bucks. ",
+            "platform": "grubhub",
+            "star_rating": 3,
+            "menu_items": [
+                {
+                    "id": "19659358870",
+                    "name": "Smoked Liverwurst Sandwich"
+                },
+                {
+                    "id": "19659357973",
+                    "name": "Homestyle Chili & Beans"
+                },
+                {
+                    "id": "19659357674",
+                    "name": "Cole slaw"
+                },
+                {
+                    "id": "19659358678",
+                    "name": "Soft Drink"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 16,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Anne",
+            "comment": "I have been a customer for about 70 years and am never disappointed.  And I love that with Grubhub I don't need to remember a password",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659357735",
+                    "name": "Little New Yorker"
+                },
+                {
+                    "id": "19659357588",
+                    "name": "Cantaloupe"
+                },
+                {
+                    "id": "19659357885",
+                    "name": "Water"
+                },
+                {
+                    "id": "19841264063",
+                    "name": "Rugula"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 17,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "scott",
+            "comment": "I love the soup!",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659358981",
+                    "name": "Chicken Broth Soup"
+                },
+                {
+                    "id": "19659357688",
+                    "name": "Dr. Browns Sodas"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 18,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Ezra",
+            "comment": "Excellent. Always exceptional",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659358599",
+                    "name": "Egg Salad Sandwich"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 19,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Bernie",
+            "comment": "Don't bother with this one time LA legend. \nThey have zero care in the take out orders. No condiments at all for items that all require them. No plastic fork or knife No napkins. Food tossed into a take out container. $60 for garbage",
+            "platform": "grubhub",
+            "star_rating": 3,
+            "menu_items": [
+                {
+                    "id": "19659358319",
+                    "name": "Deli Plate"
+                },
+                {
+                    "id": "19659358024",
+                    "name": "Turkey Burger"
+                },
+                {
+                    "id": "19659358337",
+                    "name": "1/2 lb Swiss Cheese"
+                },
+                {
+                    "id": "19659358156",
+                    "name": "Cottage Cheese"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 20,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Jesse",
+            "comment": "Delicious and I'm happy",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659357354",
+                    "name": "Matzo Ball Soup"
+                },
+                {
+                    "id": "19659358702",
+                    "name": "Sliced Challah Bread"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 21,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Jim",
+            "comment": "It's one of my favorites!",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659358643",
+                    "name": "Roast Chicken"
+                },
+                {
+                    "id": "19659357973",
+                    "name": "Homestyle Chili & Beans"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 22,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "John ",
+            "comment": "I love the restaurant, but the food was cold when they got here and the portions were a lot smaller than when I ordered from DoorDash a few weeks ago the same deli assortment",
+            "platform": "grubhub",
+            "star_rating": 2,
+            "menu_items": [
+                {
+                    "id": "19659358795",
+                    "name": "Mish Mosh Soup"
+                },
+                {
+                    "id": "19659357207",
+                    "name": "Assorted Deli Plate"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 23,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Richard",
+            "comment": "Great. Some lack of flexibility. Wanted a Caesar salad with a scoop of tuna but had to buy a pint for $16.",
+            "platform": "grubhub",
+            "star_rating": 4,
+            "menu_items": [
+                {
+                    "id": "19659358146",
+                    "name": "Matt's Special Sandwich"
+                },
+                {
+                    "id": "19659357266",
+                    "name": "Brooklyn Avenue"
+                },
+                {
+                    "id": "19659357686",
+                    "name": "Caesar Salad"
+                },
+                {
+                    "id": "19659358369",
+                    "name": "Pint of Tuna Salad"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 24,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Sandra",
+            "comment": "Everything was great.  Matzo ball soup, Pastrami dip sandwich. The chopped liver appetizer was very good but had no sliced onion, no pickle, and no butter! Just two scoops of liver and l even called the restaurant immediately after placing the order to make sure the included rye bread, plenty of iced onion, and  pickle. I had none at home. But it was good liver but it a little disappointed.  Mrs. Sandra Todd (213) 248 8326 ",
+            "platform": "grubhub",
+            "star_rating": 4,
+            "menu_items": [
+                {
+                    "id": "19659358401",
+                    "name": "Pastrami Dip Sandwich"
+                },
+                {
+                    "id": "19659357354",
+                    "name": "Matzo Ball Soup"
+                },
+                {
+                    "id": "19659357323",
+                    "name": "Chopped Liver Appetizer"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 25,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Anne",
+            "comment": "Always good.  Better if I could communicate outside of constricts from\nDealing with a.i.",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659357735",
+                    "name": "Little New Yorker"
+                },
+                {
+                    "id": "19659357739",
+                    "name": "Sweet And Sour Stuffed Cabbage"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 26,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Tina",
+            "comment": "Good food and nice portions.",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659358264",
+                    "name": "Apple Turnover"
+                },
+                {
+                    "id": "19905459366",
+                    "name": "6 Pack Onion Bagels"
+                },
+                {
+                    "id": "19659357408",
+                    "name": "Cream Cheese"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 27,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Adam",
+            "comment": "The sandwich meat has so much fat that I had to throw most of it away.",
+            "platform": "grubhub",
+            "star_rating": 2,
+            "menu_items": [
+                {
+                    "id": "19659358974",
+                    "name": "Jersey City"
+                },
+                {
+                    "id": "19659358892",
+                    "name": "Black & White Cookie"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 28,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Ricky",
+            "comment": "Order for HOT soup, HOT sandwich, HOT knisch... ALL were delivered LATE and COLD! ",
+            "platform": "grubhub",
+            "star_rating": 1,
+            "menu_items": [
+                {
+                    "id": "19659357401",
+                    "name": "Sliced Rye Bread w/ Seeds"
+                },
+                {
+                    "id": "19659358296",
+                    "name": "Hot Pastrami Sandwich"
+                },
+                {
+                    "id": "19659358981",
+                    "name": "Chicken Broth Soup"
+                },
+                {
+                    "id": "19659358219",
+                    "name": "Hot Potato Knish"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 29,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Donna",
+            "comment": "Love the matzo ball soup!",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659357354",
+                    "name": "Matzo Ball Soup"
+                },
+                {
+                    "id": "19659358981",
+                    "name": "Chicken Broth Soup"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 30,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Jeremy",
+            "comment": "Its Canters so even when its not good its edible. Regardless,  ordering from here takes FOREVER.  Avg. 1.5 hrs. No matter the time of day. ",
+            "platform": "grubhub",
+            "star_rating": 3,
+            "menu_items": [
+                {
+                    "id": "19659358795",
+                    "name": "Mish Mosh Soup"
+                },
+                {
+                    "id": "19659358219",
+                    "name": "Hot Potato Knish"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 31,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Col. Scott",
+            "comment": "I know the owners (Terri and her husband and Mark) I\nOrder weekly. What happened. The Mac and Cheese was burnt. Totally burnt and impossible to eat. Some cook really bother it.  The blintzes are great just over priced and the rest was fine but no bread anymore with Mac and it was burnt and hard and I tossed. You can do better ",
+            "platform": "grubhub",
+            "star_rating": 1,
+            "menu_items": [
+                {
+                    "id": "19659358704",
+                    "name": "Cheese Blintzers"
+                },
+                {
+                    "id": "19659357333",
+                    "name": "Potato Pancakes"
+                },
+                {
+                    "id": "19659358884",
+                    "name": "Macaroni & Cheese"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 32,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Sand",
+            "comment": "Food was great",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659358605",
+                    "name": "Canter's Club House"
+                },
+                {
+                    "id": "19659358808",
+                    "name": "Thanksgiving Dinner"
+                },
+                {
+                    "id": "19659357651",
+                    "name": "Tuna Salad Sandwich"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 33,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Arlene",
+            "comment": "Good quality product n fast service.",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659358338",
+                    "name": "Beef Dip Sandwich"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 34,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "Maya",
+            "comment": "Very generous with lox (scrambled eggs), but width brisket, need more gravy (container was too tiny) & vegetable of the day was a small container of peas-sigh. Other than that, food tasted great like always.",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "19659357915",
+                    "name": "Creamy Cheesecake"
+                },
+                {
+                    "id": "19659358962",
+                    "name": "Lox, Eggs & Onions Scrambled"
+                },
+                {
+                    "id": "19659357393",
+                    "name": "Side of Cream Cheese"
+                },
+                {
+                    "id": "19659358942",
+                    "name": "Roast Brisket"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 35,
+        "fields": {
+            "restaurant": 2,
+            "reviewer": "SYLVIA",
+            "comment": "The restaurant kept moving the time for food preparation back to almost an hr. Then the driver took another hr delivering food.",
+            "platform": "grubhub",
+            "star_rating": 3,
+            "menu_items": [
+                {
+                    "id": "19659357354",
+                    "name": "Matzo Ball Soup"
+                },
+                {
+                    "id": "19659358034",
+                    "name": "Corned Beef Reuben"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 1,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Marc",
+            "comment": "Delicious food, pizza was hot and driver was very friendly.",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "1426265961",
+                    "name": "2 Toppings Pizza"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 2,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Joshua",
+            "comment": "TLDR: Don't order from here expecting anything special. Although my pickup order was on-time and correct, the high GrubHub rating and positive reviews led me to anticipate much better food than I received. The pizza was just OK. Adequate cheese & topping quality/quantity. I have no idea why other reviews rave about the crust - it is nothing special. To be clear, the pizza wasn't gross. The garlic cheese bread was kinda gross, though: a toasted sesame seed hoagie bun with some kind of oil and a bit of mozz.",
+            "platform": "grubhub",
+            "star_rating": 2,
+            "menu_items": [
+                {
+                    "id": "1426091573",
+                    "name": "Garlic Bread with Melted Cheese Whole Loaf"
+                },
+                {
+                    "id": "1426265961",
+                    "name": "2 Toppings Pizza"
+                },
+                {
+                    "id": "1426265961",
+                    "name": "2 Toppings Pizza"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 3,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Dominic",
+            "comment": "Lasagna was really bad - trust me don\u2019t order it. San Francisco pizza had barely any feta cheese on it and the crust was a bit doughy. ",
+            "platform": "grubhub",
+            "star_rating": 2,
+            "menu_items": [
+                {
+                    "id": "1426285622",
+                    "name": "Baked Lasagna"
+                },
+                {
+                    "id": "1426459087",
+                    "name": "2. San Francisco Pizza"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 4,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Robert",
+            "comment": "Friendly, good food, and fast.",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "1425695036",
+                    "name": "5. Hawaiian Pizza"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 5,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Susan",
+            "comment": "Better than expected",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "1426265961",
+                    "name": "2 Toppings Pizza"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 6,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Ernest",
+            "comment": "Really bad food",
+            "platform": "grubhub",
+            "star_rating": 3,
+            "menu_items": [
+                {
+                    "id": "1426459087",
+                    "name": "2. San Francisco Pizza"
+                },
+                {
+                    "id": "1425695036",
+                    "name": "5. Hawaiian Pizza"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 7,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Stephanie",
+            "comment": "Best pizza in town",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "1426458933",
+                    "name": "3 Toppings Pizza"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 8,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Aldo Catalan",
+            "comment": "I personally like that pizza spot",
+            "platform": "grubhub",
+            "star_rating": 2,
+            "menu_items": [
+                {
+                    "id": "1426285923",
+                    "name": "1 Topping Pizza"
+                },
+                {
+                    "id": "1426265627",
+                    "name": "Hot Wings"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 9,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "RICHARD",
+            "comment": "The pizza is good. I would go there again.",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "1426458933",
+                    "name": "3 Toppings Pizza"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 10,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Bobby",
+            "comment": "Was pizza night last evening for me and the 2 doormen....was delicious \ud83d\ude0b ",
+            "platform": "grubhub",
+            "star_rating": 4,
+            "menu_items": [
+                {
+                    "id": "1426091994",
+                    "name": "3. California Pizza"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 11,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Bobby",
+            "comment": "The Calzone was pretty good \ud83d\udc4d ",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "1426458578",
+                    "name": "Napoli Calzone"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 12,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Sofia",
+            "comment": "Good flavor and crust. Little mashroom but good overoll and really enjoy it.  Not happy with the garlic bread (very depressing and poor)",
+            "platform": "grubhub",
+            "star_rating": 4,
+            "menu_items": [
+                {
+                    "id": "1426265961",
+                    "name": "2 Toppings Pizza"
+                },
+                {
+                    "id": "1426091573",
+                    "name": "Garlic Bread with Melted Cheese"
+                }
+            ]
+        }
+    },
+    {
+        "model": "api.review",
+        "pk": 13,
+        "fields": {
+            "restaurant": 1,
+            "reviewer": "Ethan",
+            "comment": "it was so good i almost lost my mind. have you tried it before",
+            "platform": "grubhub",
+            "star_rating": 5,
+            "menu_items": [
+                {
+                    "id": "1426459087",
+                    "name": "2. San Francisco"
+                },
+                {
+                    "id": "1422668507",
+                    "name": "Whole Loaf"
+                }
+            ]
+        }
+    }
+]

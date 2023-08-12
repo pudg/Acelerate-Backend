@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>API</h1>
+    <h4>The following are currently supported platforms:</h4>
+    {% if platforms %}
+        {% for platform in platforms %}
+            <strong>{{ platform }}</strong></br>
+        {% endfor %}
+    {% endif %}
+    </br></br>
+    <h1>Endpoints </h1></br>
+    <p>
+        To make queries to the provided api use the following endpoints.</br></br>
+    </p>
+
+    <p>
+        <strong>/api/{% verbatim %}{platform}{% endverbatim %}/restaurant/{% verbatim %}{identifier}{% endverbatim %}/reviews</strong>
+    </p>
+    <p>
+        Returns a list of all reviews from the specified <strong>platform</strong> for the restaurant
+        <strong>identifier</strong>.</br>
+        Use the following link to view a list of all reviews for Napoli Pizza.</br></br>
+        Ex.</br>
+        <a href="http://127.0.0.1:8000/api/grubhub/restaurant/2058686/reviews">
+            http://127.0.0.1:8000/api/grubhub/restaurant/2058686/reviews
+        </a>
+    </p>
+    </br></br>
+
+    <p>
+        <strong>/api/{% verbatim %}{platform}{% endverbatim %}/restaurant/{% verbatim %}{identifier}{% endverbatim %}/worst</strong>
+    </p>
+    <p>
+        Returns a list of all items rated with less than three stars from the specified <strong>platform</strong> for the 
+        restaurant <strong>identifier</strong>.</br> Open the following link to view a list of all problematic items from Napoli
+        Pizza.</br></br>
+        Ex.</br>
+        <a href="http://127.0.0.1:8000/api/grubhub/restaurant/2058686/worst">
+            http://127.0.0.1:8000/api/grubhub/restaurant/2058686/worst
+        </a>
+    </p>
+    </br></br>
+
+    <p>
+        <strong>/api/{% verbatim %}{platform}{% endverbatim %}/restaurant/{% verbatim %}{identifier}{% endverbatim %}/best</strong>
+    </p>
+    <p>
+        Returns a list of all items with five-star rating from the specified <strong>platform</strong> for the 
+        restaurant <strong>identifier</strong>.</br> Open the following link to view a list of all problematic items from Napoli
+        Pizza.</br></br>
+        Ex.</br>
+        <a href="http://127.0.0.1:8000/api/grubhub/restaurant/2058686/best">
+            http://127.0.0.1:8000/api/grubhub/restaurant/2058686/best
+        </a>
+    </p>
+    </br></br>
+{% endblock %}
