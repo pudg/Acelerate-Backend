@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand, CommandError, CommandParser
 from api.models import Review, Restaurant
+from api.views import launch_update_thread
 
 class Command(BaseCommand):
     help = "Updates all reviews for the available restaurants."
@@ -12,6 +13,10 @@ class Command(BaseCommand):
         for restaurant_id in restaurant_ids:
             try:
                 restaurant = Restaurant.objects.filter(platform_id=restaurant_id)
+                launch_update_thread(Restaurant=Restaurant,
+                                     Review=Review,
+                                     identifier=restaurant_id,
+                                     platform="grubhub")
             except Review.DoesNotExist:
                 raise CommandError(f"Restaurant: {restaurant_id} does not exist.")
             
