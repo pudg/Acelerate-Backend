@@ -1,4 +1,4 @@
-# Acelerate Backend
+# Restaurant Backend
 
 ## Install
 Create and activate virtual environment.
