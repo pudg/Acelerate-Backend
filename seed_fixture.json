@@ -1,6 +1,6 @@
 [
     {
-        "model": "api.restaurant",
+        "model": "apiv2.restaurant",
         "pk": 1,
         "fields": {
             "name": "Napoli Pizza",
@@ -10,7 +10,7 @@
         }
      },
      {
-        "model": "api.restaurant",
+        "model": "apiv2.restaurant",
         "pk": 2,
         "fields": {
             "name": "Canter's Deli",
@@ -20,7 +20,7 @@
         }
      },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 1,
         "fields": {
             "restaurant": 2,
@@ -41,7 +41,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 2,
         "fields": {
             "restaurant": 2,
@@ -66,7 +66,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 3,
         "fields": {
             "restaurant": 2,
@@ -91,7 +91,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 4,
         "fields": {
             "restaurant": 2,
@@ -112,7 +112,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 5,
         "fields": {
             "restaurant": 2,
@@ -133,7 +133,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 6,
         "fields": {
             "restaurant": 2,
@@ -150,7 +150,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 7,
         "fields": {
             "restaurant": 2,
@@ -179,7 +179,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 8,
         "fields": {
             "restaurant": 2,
@@ -196,7 +196,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 9,
         "fields": {
             "restaurant": 2,
@@ -213,7 +213,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 10,
         "fields": {
             "restaurant": 2,
@@ -230,7 +230,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 11,
         "fields": {
             "restaurant": 2,
@@ -251,7 +251,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 12,
         "fields": {
             "restaurant": 2,
@@ -308,7 +308,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 13,
         "fields": {
             "restaurant": 2,
@@ -349,7 +349,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 14,
         "fields": {
             "restaurant": 2,
@@ -366,7 +366,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 15,
         "fields": {
             "restaurant": 2,
@@ -395,7 +395,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 16,
         "fields": {
             "restaurant": 2,
@@ -424,7 +424,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 17,
         "fields": {
             "restaurant": 2,
@@ -445,7 +445,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 18,
         "fields": {
             "restaurant": 2,
@@ -462,7 +462,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 19,
         "fields": {
             "restaurant": 2,
@@ -491,7 +491,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 20,
         "fields": {
             "restaurant": 2,
@@ -512,7 +512,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 21,
         "fields": {
             "restaurant": 2,
@@ -533,7 +533,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 22,
         "fields": {
             "restaurant": 2,
@@ -554,7 +554,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 23,
         "fields": {
             "restaurant": 2,
@@ -583,7 +583,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 24,
         "fields": {
             "restaurant": 2,
@@ -608,7 +608,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 25,
         "fields": {
             "restaurant": 2,
@@ -629,7 +629,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 26,
         "fields": {
             "restaurant": 2,
@@ -654,7 +654,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 27,
         "fields": {
             "restaurant": 2,
@@ -675,7 +675,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 28,
         "fields": {
             "restaurant": 2,
@@ -704,7 +704,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 29,
         "fields": {
             "restaurant": 2,
@@ -725,7 +725,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 30,
         "fields": {
             "restaurant": 2,
@@ -746,7 +746,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 31,
         "fields": {
             "restaurant": 2,
@@ -771,7 +771,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 32,
         "fields": {
             "restaurant": 2,
@@ -796,7 +796,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 33,
         "fields": {
             "restaurant": 2,
@@ -813,7 +813,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 34,
         "fields": {
             "restaurant": 2,
@@ -842,7 +842,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 35,
         "fields": {
             "restaurant": 2,
@@ -863,7 +863,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 1,
         "fields": {
             "restaurant": 1,
@@ -880,7 +880,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 2,
         "fields": {
             "restaurant": 1,
@@ -905,7 +905,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 3,
         "fields": {
             "restaurant": 1,
@@ -926,7 +926,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 4,
         "fields": {
             "restaurant": 1,
@@ -943,7 +943,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 5,
         "fields": {
             "restaurant": 1,
@@ -960,7 +960,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 6,
         "fields": {
             "restaurant": 1,
@@ -981,7 +981,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 7,
         "fields": {
             "restaurant": 1,
@@ -998,7 +998,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 8,
         "fields": {
             "restaurant": 1,
@@ -1019,7 +1019,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 9,
         "fields": {
             "restaurant": 1,
@@ -1036,7 +1036,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 10,
         "fields": {
             "restaurant": 1,
@@ -1053,7 +1053,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 11,
         "fields": {
             "restaurant": 1,
@@ -1070,7 +1070,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 12,
         "fields": {
             "restaurant": 1,
@@ -1091,7 +1091,7 @@
         }
     },
     {
-        "model": "api.review",
+        "model": "apiv2.review",
         "pk": 13,
         "fields": {
             "restaurant": 1,

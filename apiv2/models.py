@@ -1,7 +1,6 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 
-
 class Restaurant(models.Model):
     """ Model used to store Restaurant records in our database.
 
@@ -11,15 +10,13 @@ class Restaurant(models.Model):
         uri: Optional string denoting the URI to the restaurant.
         phone_number: Optional string denoting the contact number of the restaurant.
     """
-    name = models.CharField(max_length=50)
-    platform_id = models.CharField(max_length=50, required=True)
-    uri = models.CharField(max_length=100, blank=False, default="")
-    phone_number = models.CharField(max_length=15, blank=True, default="")
+    name = models.CharField(max_length=50, blank=False)
+    platform_id = models.CharField(max_length=50, blank=False)
+    uri = models.CharField(max_length=100, default="")
+    phone_number = models.CharField(max_length=10, default="")
 
     def __str__(self):
-        return f"{self.name}, {self.uri}, {self.platform_id}"
-    class Meta:
-        ordering = ["name"]
+        return f"{self.name}, {self.platform_id}, {self.uri}, {self.phone_number}"
 
 
 class Review(models.Model):
@@ -37,11 +34,12 @@ class Review(models.Model):
         menu_items: An array denoting the items that were ordered by the customer.
     """
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
-    reviewer = models.CharField(max_length=50)
-    comment = models.TextField()
-    platform = models.TextField(max_length=50, blank=False)
-    star_rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
+    reviewer = models.CharField(max_length=50, blank=False)
+    comment = models.TextField(blank=False)
+    platform = models.CharField(max_length=50, blank=False)
+    star_rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2)])
     menu_items = models.JSONField()
 
     def __str__(self):
-        return f"{self.reviewer}, {self.comment}, {self.platform}, {self.star_rating}, {self.menu_items}"
+        return f"{self.restaurant}, {self.reviewer}, {self.comment}, {self.platform}, {self.star_rating}, {self.menu_items}"
+

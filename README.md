@@ -1,4 +1,6 @@
-# Restaurant Backend
+# Restaurant Reviews
+
+REST API using Django REST Framework.
 
 ## Install
 Create and activate virtual environment.
@@ -40,36 +42,36 @@ To directly refresh restaurant reviews from the web-app use the `Refresh` button
 ## API Endpoints
 The following endpoints define simple behavior for our API.
 
-<span style="color:green">GET:</span> `/api` 
+`POST /reviews`
 
-    Returns a list of all available restaurant platform providers. (i.e. grubhub, ubereats, doordash)
-    Open the following link to view the results.
+    Creates a new Review record using given json object.
 
-    http://127.0.0.1:8000/api
+`GET: /reviews`
 
+    Returns a list of all reviews.
 
+`GET: /reviews/<int:pk>`
 
+    Returns information about a specific Review.
 
-<span style="color:green">GET:</span> `/api/<str:platform>/restaurant/<int:identifier>/reviews`
+`PUT: /reviews/<int:pk>`
 
-    Returns a list of all reviews from the specified `platform` for the restaurant `identifier`.
-    Open the following link to view a list of all results for reviews for Napoli Pizza
+    Updates specified Review record given json object.
 
-    http://127.0.0.1:8000/api/grubhub/restaurant/2058686/reviews
+`DELETE: /reviews/<int:pk>`
 
-<span style="color:green">GET:</span> `/api/<str:platform>/restaurant/<int:identifier>/problematic`
+    Deletes the specified Review record.
 
-    Returns a list of all items rated with less than three stars from the specified `platform` for the 
-    restaurant `identifier`. Open the following link to view a list of all problematic items from Napoli
-    Pizza.
-
-    http://127.0.0.1:8000/api/grubhub/restaurant/2058686/problematic
-
-<span style="color:green">GET:</span> `/api/<str:platform>/restaurant/<int:identifier>/best`
-
-    Returns a list of all items with five-star rating from the specified `platform` for the restaurant `identifier`. Open the following link to view a list of all five-star rated items from Napoli Pizza.
-
-    http://127.0.0.1:8000/api/grubhub/restaurant/2058686/best
-
-## Known Issues
-The scraping process uses `request-html` python package which internally launches a chromium browser in `headless/nonheadless` mode. GrubHub however has bot detection across most visited restaurant pages and will block the browser/ip after repeated requests.
+## TODO
+- [X] Add API endpoint documentation
+- [ ] Add class based views
+- [ ] Add model serializers
+- [ ] Add API endpoints
+  - [ ] Add create review functionality (POST)
+  - [ ] Add read all/detail review functionality (GET)
+  - [ ] Add update review functionality (PUT)
+  - [ ] Add delete recreviewipe functionality (DELETE)
+- [ ] Add pagination
+- [ ] Add session management
+- [ ] Add search filtering
+- [ ] Deploy
