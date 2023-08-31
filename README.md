@@ -64,13 +64,14 @@ The following endpoints define simple behavior for our API.
 
 ## TODO
 - [X] Add API endpoint documentation
-- [ ] Add class based views
-- [ ] Add model serializers
-- [ ] Add API endpoints
-  - [ ] Add create review functionality (POST)
-  - [ ] Add read all/detail review functionality (GET)
-  - [ ] Add update review functionality (PUT)
-  - [ ] Add delete recreviewipe functionality (DELETE)
+- [X] Add class based views
+- [X] Add model serializers
+- [X] Add Review API endpoints
+  - [X] Add create review functionality (POST)
+  - [X] Add read all/detail review functionality (GET)
+  - [X] Add update review functionality (PUT)
+  - [X] Add delete recreviewipe functionality (DELETE)
+- [ ] Update API endpoints with Restaurant functionality
 - [ ] Add pagination
 - [ ] Add session management
 - [ ] Add search filtering

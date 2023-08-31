@@ -16,7 +16,7 @@ class Restaurant(models.Model):
     phone_number = models.CharField(max_length=10, default="")
 
     def __str__(self):
-        return f"{self.name}, {self.platform_id}, {self.uri}, {self.phone_number}"
+        return f"{self.id}, {self.name}, {self.platform_id}, {self.uri}, {self.phone_number}"
 
 
 class Review(models.Model):
@@ -33,7 +33,7 @@ class Review(models.Model):
         star_rating: An integer denoting the restaurant stars.
         menu_items: An array denoting the items that were ordered by the customer.
     """
-    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name='reviews')
     reviewer = models.CharField(max_length=50, blank=False)
     comment = models.TextField(blank=False)
     platform = models.CharField(max_length=50, blank=False)
@@ -41,5 +41,5 @@ class Review(models.Model):
     menu_items = models.JSONField()
 
     def __str__(self):
-        return f"{self.restaurant}, {self.reviewer}, {self.comment}, {self.platform}, {self.star_rating}, {self.menu_items}"
+        return f"{self.id}, {self.restaurant}, {self.reviewer}, {self.comment}, {self.platform}, {self.star_rating}, {self.menu_items}"
 
