@@ -42,25 +42,45 @@ To directly refresh restaurant reviews from the web-app use the `Refresh` button
 ## API Endpoints
 The following endpoints define simple behavior for our API.
 
-`POST /reviews`
+`POST /restaurants`
 
-    Creates a new Review record using given json object.
+    Creates a new Restaurant record.
 
-`GET: /reviews`
+`POST: /restaurants/<int:pk>/reviews`
 
-    Returns a list of all reviews.
+    Creates a new Review record for the specified Restaurant.
 
-`GET: /reviews/<int:pk>`
+`GET: /restaurants`
 
-    Returns information about a specific Review.
+    Returns a list of all Restaurant records.
 
-`PUT: /reviews/<int:pk>`
+`GET: /restaurants/<int:pk>`
 
-    Updates specified Review record given json object.
+    Returns details about the specific Restaurant.
 
-`DELETE: /reviews/<int:pk>`
+`GET: /restaurants/<int:pk>/reviews`
 
-    Deletes the specified Review record.
+    Returns a list of all Review records for the specified Restaurant.
+
+`GET: /restaurants/<int:pk>/reviews/<int:id>`
+
+    Returns details about a specific Review for the corresponding Restaurant.
+
+`PUT: /restaurants/<int:pk>`
+
+    Updates specified Restaurant record given json object.
+
+`PUT: /restaurants/<int:pk>/reviews/<int:id>`
+
+    Updates a Review record for the specified Restaurant.
+
+`DELETE: /restaurants/<int:pk>`
+
+    Deletes the specified Restaurant record.
+
+`DELETE: /restaurants/<int:pk>/reviews/<int:id>`
+
+    Deletes a Review record for the specified Restaurant.
 
 ## TODO
 - [X] Add API endpoint documentation
