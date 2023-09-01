@@ -33,21 +33,29 @@ def restaurant_detail(pk):
         raise Http404
 
 
-def all_reviews():
+def all_reviews(pk):
     """ Pulls all Review records in the database.
-    
-    Returns:
-        A list of all Review records in the database.
-    """
-    return Review.objects.all()
 
-def review_detail(pk):
-    """ Pulls a single Review record.
-
-    Filters Review records and grabs Review that matches the specified primary key.
+    Selects all Review records in the database corresponding to the Restaurant denoted
+    by the pk.
 
     Args:
-        pk: An integer denoting the Review record primary key.
+        pk: An integer denoting the desired Restaurant.
+    
+    Returns:
+        A list of all Review records in the database for the specified Restaurant.
+    """
+    return Review.objects.filter(restaurant__pk=pk)
+
+def review_detail(pk, id):
+    """ Pulls a single Review record.
+
+    Filters Review records and grabs Review that matches the specified id for the 
+    restaurant denoted by pk.
+
+    Args:
+        pk: An integer denoting the Restaurant record.
+        id: An integer denoting the Review record.
 
     Returns:
         Review: A single Review record if it exists in the database.
@@ -56,6 +64,6 @@ def review_detail(pk):
         Http404: An error occurred when searching for Review record with specified primary key.
     """
     try:
-        return Review.objects.get(pk=pk)
+        return Review.objects.get(restaurant__pk=pk, id=id)
     except Review.DoesNotExist:
         raise Http404

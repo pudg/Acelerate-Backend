@@ -40,6 +40,18 @@ def update_restaurant(request, pk):
         serializer.save()
     return serializer
 
+def delete_restaurant(pk):
+    """ Removes a Restaurant record.
+
+    Args:
+        request:
+
+        pk:
+    """
+    restaurant = selectors.restaurant_detail(pk=pk)
+    restaurant.delete()
+    return
+
 def create_review(request):
     """ Creates a new Review record.
 
@@ -56,7 +68,7 @@ def create_review(request):
         serializer.save()
     return serializer
 
-def update_review(request, pk):
+def update_review(request, pk, id):
     """ Updates a review record.
 
     Uses data within the request object to update the specified Review record.
@@ -68,25 +80,13 @@ def update_review(request, pk):
     Returns:
         serializer: ReviewSerializer object with updated data.
     """
-    review = selectors.review_detail(request, pk)
+    review = selectors.review_detail(pk=pk , id=id)
     serializer = ReviewSerializer(review, data=request.data)
     if serializer.is_valid():
         serializer.save()
     return serializer
 
-def delete_restaurant(pk):
-    """ Removes a Restaurant record.
-
-    Args:
-        request:
-
-        pk:
-    """
-    restaurant = selectors.restaurant_detail(pk=pk)
-    restaurant.delete()
-    return
-
-def delete_review(pk):
+def delete_review(pk, id):
     """ Removes a Review record.
 
     Deletes specified Review record from the database.
@@ -97,6 +97,6 @@ def delete_review(pk):
     Returns:
         None
     """
-    review = selectors.review_detail(pk)
+    review = selectors.review_detail(pk=pk, id=id)
     review.delete()
     return

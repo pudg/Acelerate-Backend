@@ -71,7 +71,7 @@ The following endpoints define simple behavior for our API.
   - [X] Add read all/detail review functionality (GET)
   - [X] Add update review functionality (PUT)
   - [X] Add delete recreviewipe functionality (DELETE)
-- [ ] Update API endpoints with Restaurant functionality
+- [X] Update API endpoints with Restaurant functionality
 - [ ] Add pagination
 - [ ] Add session management
 - [ ] Add search filtering
