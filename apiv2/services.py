@@ -44,9 +44,7 @@ def delete_restaurant(pk):
     """ Removes a Restaurant record.
 
     Args:
-        request:
-
-        pk:
+        pk: Integet denoting the Restaurant record.
     """
     restaurant = selectors.restaurant_detail(pk=pk)
     restaurant.delete()
@@ -76,6 +74,7 @@ def update_review(request, pk, id):
     Args:
         request: Request object containing new data.
         pk: Integer denoting the primary key of the Review record.
+        id: Integet denoting the specific Review record.
 
     Returns:
         serializer: ReviewSerializer object with updated data.
@@ -93,6 +92,7 @@ def delete_review(pk, id):
 
     Args:
         pk: Integer denoting the primary key of the Review record.
+        id: Integer denoting the specific Review record.
 
     Returns:
         None
