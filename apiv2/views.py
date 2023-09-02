@@ -4,16 +4,19 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from apiv2.serializers import RestaurantSerializer, ReviewSerializer
 from apiv2 import selectors, services
+from apiv2.paginations import CustomPagination
 
 class RestaurantList(APIView):
     """
     List all Restaurants or create a new Restaurant.
     """
-    serializer_class = RestaurantSerializer
+
+    paginator = CustomPagination()
 
     def get(self, request, format=None):
         restaurants = selectors.all_restaurants()
-        serializer = RestaurantSerializer(restaurants, many=True)
+        paginated_restaurants = self.paginator.paginate_queryset(restaurants, request=request)
+        serializer = RestaurantSerializer(paginated_restaurants, many=True)
         return Response(data=serializer.data, status=status.HTTP_200_OK)
 
     def post(self, request, format=None):
@@ -26,7 +29,6 @@ class RestaurantDetail(APIView):
     """
     Retrieve, Update, or Delete a Restaurant Record.
     """
-    serializer_class = RestaurantSerializer
     
     def get(self, request, pk, format=None):
         restaurant = selectors.restaurant_detail(pk=pk)
@@ -48,9 +50,13 @@ class ReviewList(APIView):
     """
     List all Reviews or create a new Review.
     """
+
+    paginator = CustomPagination()
+
     def get(self, request, pk, format=None):
         reviews = selectors.all_reviews(pk=pk)
-        serializer = ReviewSerializer(reviews, many=True)
+        paginated_reviews = self.paginator.paginate_queryset(reviews, request=request)
+        serializer = ReviewSerializer(paginated_reviews, many=True)
         return Response(data=serializer.data, status=status.HTTP_200_OK)
     
     def post(self, request, pk, format=None):
@@ -63,7 +69,6 @@ class ReviewDetail(APIView):
     """
     Retrieve, Update, or Delete a Review record.
     """
-    serializer_class = ReviewSerializer
 
     def get(self, request, pk, id, format=None):
         review = selectors.review_detail(pk=pk, id=id)
