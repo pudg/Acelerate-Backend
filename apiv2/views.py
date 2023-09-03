@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from apiv2.serializers import RestaurantSerializer, ReviewSerializer
 from apiv2 import selectors, services
 from apiv2.paginations import CustomPagination
+from apiv2.paginations import MIN_PAGE_SIZE
 
 class RestaurantList(APIView):
     """
@@ -33,6 +34,18 @@ class RestaurantDetail(APIView):
     def get(self, request, pk, format=None):
         restaurant = selectors.restaurant_detail(pk=pk)
         serializer = RestaurantSerializer(restaurant)
+        if 'recently_viewed' in request.session:
+            if pk in request.session['recently_viewed']:
+                request.session['recently_viewed'].remove(pk)
+                request.session['recently_viewed'].insert(0, pk)
+            else:
+                request.session['recently_viewed'].append(pk)
+            if len(request.session['recently_viewed']) > MIN_PAGE_SIZE:
+                    request.session['recently_viewed'].pop()
+        else:
+            request.session['recently_viewed'] = [pk]
+        
+        request.session.modified = True
         return Response(data=serializer.data, status=status.HTTP_200_OK)
     
     def put(self, request, pk, format=None):

@@ -15,6 +15,9 @@ class Restaurant(models.Model):
     uri = models.CharField(max_length=100, default="")
     phone_number = models.CharField(max_length=10, default="")
 
+    class Meta:
+        ordering = ['id']
+
     def __str__(self):
         return f"{self.id}, {self.name}, {self.platform_id}, {self.uri}, {self.phone_number}"
 
@@ -39,6 +42,9 @@ class Review(models.Model):
     platform = models.CharField(max_length=50, blank=False)
     star_rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2)])
     menu_items = models.JSONField()
+
+    class Meta:
+        ordering = ['id']
 
     def __str__(self):
         return f"{self.id}, {self.restaurant}, {self.reviewer}, {self.comment}, {self.platform}, {self.star_rating}, {self.menu_items}"
