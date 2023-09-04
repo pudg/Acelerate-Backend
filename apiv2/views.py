@@ -5,6 +5,8 @@ from rest_framework.response import Response
 from apiv2.serializers import RestaurantSerializer, ReviewSerializer
 from apiv2 import selectors, services
 from apiv2.paginations import CustomPagination
+from apiv2.filters import ReviewFilter, RestaurantFilter
+from django_filters.rest_framework import DjangoFilterBackend
 from apiv2.paginations import MIN_PAGE_SIZE
 
 class RestaurantList(APIView):
@@ -13,10 +15,18 @@ class RestaurantList(APIView):
     """
 
     paginator = CustomPagination()
+    restaurant_filter = RestaurantFilter()
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['name']
 
     def get(self, request, format=None):
         restaurants = selectors.all_restaurants()
-        paginated_restaurants = self.paginator.paginate_queryset(restaurants, request=request)
+        filtered_restaurants = self.restaurant_filter.filter_queryset(request=request, queryset=restaurants, view=self)
+        paginated_restaurants = None
+        if filtered_restaurants.exists():
+            paginated_restaurants = self.paginator.paginate_queryset(filtered_restaurants, request=request)
+        else:
+            paginated_restaurants = self.paginator.paginate_queryset(restaurants, request=request)
         serializer = RestaurantSerializer(paginated_restaurants, many=True)
         return Response(data=serializer.data, status=status.HTTP_200_OK)
 
@@ -65,10 +75,18 @@ class ReviewList(APIView):
     """
 
     paginator = CustomPagination()
+    review_filter = ReviewFilter()
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['reviewer', 'star_rating']
 
     def get(self, request, pk, format=None):
         reviews = selectors.all_reviews(pk=pk)
-        paginated_reviews = self.paginator.paginate_queryset(reviews, request=request)
+        filtered_reviews = self.review_filter.filter_queryset(request=request, queryset=reviews, view=self)
+        paginated_reviews = None
+        if filtered_reviews.exists():
+            paginated_reviews = self.paginator.paginate_queryset(filtered_reviews, request=request)
+        else:
+            paginated_reviews = self.paginator.paginate_queryset(reviews, request=request)
         serializer = ReviewSerializer(paginated_reviews, many=True)
         return Response(data=serializer.data, status=status.HTTP_200_OK)
     

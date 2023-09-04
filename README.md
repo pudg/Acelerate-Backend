@@ -87,6 +87,6 @@ The following endpoints define simple behavior for our API.
   - [X] Add delete recreviewipe functionality (DELETE)
 - [X] Update API endpoints with Restaurant functionality
 - [X] Add pagination
-- [ ] Add session management
-- [ ] Add search filtering
+- [X] Add session management
+- [X] Add search filtering
 - [ ] Deploy
